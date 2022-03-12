@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69DF5BB827BFCA47002FDF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BB727BFCA47002FDF06 /* AppDelegate.swift */; };
+		69DF5BBA27BFCA47002FDF06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BB927BFCA47002FDF06 /* SceneDelegate.swift */; };
+		69DF5BBC27BFCA47002FDF06 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BBB27BFCA47002FDF06 /* MainController.swift */; };
+		69DF5BBF27BFCA47002FDF06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DF5BBD27BFCA47002FDF06 /* Main.storyboard */; };
+		69DF5BC127BFCA49002FDF06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DF5BC027BFCA49002FDF06 /* Assets.xcassets */; };
+		69DF5BC427BFCA49002FDF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DF5BC227BFCA49002FDF06 /* LaunchScreen.storyboard */; };
+		69DF5BCF27BFCA49002FDF06 /* InstaEmirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BCE27BFCA49002FDF06 /* InstaEmirTests.swift */; };
+		69DF5BD927BFCA49002FDF06 /* InstaEmirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BD827BFCA49002FDF06 /* InstaEmirUITests.swift */; };
+		69DF5BDB27BFCA49002FDF06 /* InstaEmirUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BDA27BFCA49002FDF06 /* InstaEmirUITestsLaunchTests.swift */; };
+		69DF5BEE27BFCD06002FDF06 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BED27BFCD06002FDF06 /* FeedCell.swift */; };
+		69DF5BF027BFCDC8002FDF06 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BEF27BFCDC8002FDF06 /* StoriesCollectionViewCell.swift */; };
+		69DF5BF227BFCEF7002FDF06 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BF127BFCEF7002FDF06 /* StoryCell.swift */; };
+		69DF5BF527BFD040002FDF06 /* InstaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF5BF427BFD040002FDF06 /* InstaModel.swift */; };
+		C2B14678BAF3B76A75D6CA0D /* Pods_InstaEmir_InstaEmirUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A07B4E5185844C74EB8F347 /* Pods_InstaEmir_InstaEmirUITests.framework */; };
+		EFDE82156F3C99498B0329CC /* Pods_InstaEmirTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABF4715A30D848FF263840C /* Pods_InstaEmirTests.framework */; };
+		F3F615D996E2E6C449CA3607 /* Pods_InstaEmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC17E960324046D21BE73291 /* Pods_InstaEmir.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69DF5BCB27BFCA49002FDF06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69DF5BAC27BFCA47002FDF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69DF5BB327BFCA47002FDF06;
+			remoteInfo = InstaEmir;
+		};
+		69DF5BD527BFCA49002FDF06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69DF5BAC27BFCA47002FDF06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69DF5BB327BFCA47002FDF06;
+			remoteInfo = InstaEmir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ABF4715A30D848FF263840C /* Pods_InstaEmirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaEmirTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		381179C70E7B5447FB2B3F71 /* Pods-InstaEmir-InstaEmirUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaEmir-InstaEmirUITests.release.xcconfig"; path = "Target Support Files/Pods-InstaEmir-InstaEmirUITests/Pods-InstaEmir-InstaEmirUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A44647CD21336C80777252F /* Pods-InstaEmir-InstaEmirUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaEmir-InstaEmirUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstaEmir-InstaEmirUITests/Pods-InstaEmir-InstaEmirUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A93800A27021AB77ED1DEFC /* Pods-InstaEmirTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaEmirTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaEmirTests/Pods-InstaEmirTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6581E29F07B4B49271EBCEEA /* Pods-InstaEmir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaEmir.debug.xcconfig"; path = "Target Support Files/Pods-InstaEmir/Pods-InstaEmir.debug.xcconfig"; sourceTree = "<group>"; };
+		69DF5BB427BFCA47002FDF06 /* InstaEmir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaEmir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DF5BB727BFCA47002FDF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69DF5BB927BFCA47002FDF06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		69DF5BBB27BFCA47002FDF06 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		69DF5BBE27BFCA47002FDF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69DF5BC027BFCA49002FDF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69DF5BC327BFCA49002FDF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69DF5BC527BFCA49002FDF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69DF5BCA27BFCA49002FDF06 /* InstaEmirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaEmirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DF5BCE27BFCA49002FDF06 /* InstaEmirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaEmirTests.swift; sourceTree = "<group>"; };
+		69DF5BD427BFCA49002FDF06 /* InstaEmirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaEmirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DF5BD827BFCA49002FDF06 /* InstaEmirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaEmirUITests.swift; sourceTree = "<group>"; };
+		69DF5BDA27BFCA49002FDF06 /* InstaEmirUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaEmirUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69DF5BED27BFCD06002FDF06 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		69DF5BEF27BFCDC8002FDF06 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		69DF5BF127BFCEF7002FDF06 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		69DF5BF427BFD040002FDF06 /* InstaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaModel.swift; sourceTree = "<group>"; };
+		7275C21A949763155B6D7DE1 /* Pods-InstaEmir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaEmir.release.xcconfig"; path = "Target Support Files/Pods-InstaEmir/Pods-InstaEmir.release.xcconfig"; sourceTree = "<group>"; };
+		9A07B4E5185844C74EB8F347 /* Pods_InstaEmir_InstaEmirUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaEmir_InstaEmirUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11FB5FD9A917D2A7249361F /* Pods-InstaEmirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaEmirTests.release.xcconfig"; path = "Target Support Files/Pods-InstaEmirTests/Pods-InstaEmirTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC17E960324046D21BE73291 /* Pods_InstaEmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaEmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69DF5BB127BFCA47002FDF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F615D996E2E6C449CA3607 /* Pods_InstaEmir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DF5BC727BFCA49002FDF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDE82156F3C99498B0329CC /* Pods_InstaEmirTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DF5BD127BFCA49002FDF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B14678BAF3B76A75D6CA0D /* Pods_InstaEmir_InstaEmirUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DDB1BBAA2A3AB60F53F0F51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC17E960324046D21BE73291 /* Pods_InstaEmir.framework */,
+				9A07B4E5185844C74EB8F347 /* Pods_InstaEmir_InstaEmirUITests.framework */,
+				2ABF4715A30D848FF263840C /* Pods_InstaEmirTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69DF5BAB27BFCA47002FDF06 = {
+			isa = PBXGroup;
+			children = (
+				69DF5BB627BFCA47002FDF06 /* InstaEmir */,
+				69DF5BCD27BFCA49002FDF06 /* InstaEmirTests */,
+				69DF5BD727BFCA49002FDF06 /* InstaEmirUITests */,
+				69DF5BB527BFCA47002FDF06 /* Products */,
+				DF03F0EFD7FFB97487413852 /* Pods */,
+				5DDB1BBAA2A3AB60F53F0F51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69DF5BB527BFCA47002FDF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69DF5BB427BFCA47002FDF06 /* InstaEmir.app */,
+				69DF5BCA27BFCA49002FDF06 /* InstaEmirTests.xctest */,
+				69DF5BD427BFCA49002FDF06 /* InstaEmirUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69DF5BB627BFCA47002FDF06 /* InstaEmir */ = {
+			isa = PBXGroup;
+			children = (
+				69DF5BB727BFCA47002FDF06 /* AppDelegate.swift */,
+				69DF5BB927BFCA47002FDF06 /* SceneDelegate.swift */,
+				69DF5BBB27BFCA47002FDF06 /* MainController.swift */,
+				69DF5BEF27BFCDC8002FDF06 /* StoriesCollectionViewCell.swift */,
+				69DF5BF127BFCEF7002FDF06 /* StoryCell.swift */,
+				69DF5BED27BFCD06002FDF06 /* FeedCell.swift */,
+				69DF5BF427BFD040002FDF06 /* InstaModel.swift */,
+				69DF5BBD27BFCA47002FDF06 /* Main.storyboard */,
+				69DF5BC027BFCA49002FDF06 /* Assets.xcassets */,
+				69DF5BC227BFCA49002FDF06 /* LaunchScreen.storyboard */,
+				69DF5BC527BFCA49002FDF06 /* Info.plist */,
+			);
+			path = InstaEmir;
+			sourceTree = "<group>";
+		};
+		69DF5BCD27BFCA49002FDF06 /* InstaEmirTests */ = {
+			isa = PBXGroup;
+			children = (
+				69DF5BCE27BFCA49002FDF06 /* InstaEmirTests.swift */,
+			);
+			path = InstaEmirTests;
+			sourceTree = "<group>";
+		};
+		69DF5BD727BFCA49002FDF06 /* InstaEmirUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69DF5BD827BFCA49002FDF06 /* InstaEmirUITests.swift */,
+				69DF5BDA27BFCA49002FDF06 /* InstaEmirUITestsLaunchTests.swift */,
+			);
+			path = InstaEmirUITests;
+			sourceTree = "<group>";
+		};
+		DF03F0EFD7FFB97487413852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6581E29F07B4B49271EBCEEA /* Pods-InstaEmir.debug.xcconfig */,
+				7275C21A949763155B6D7DE1 /* Pods-InstaEmir.release.xcconfig */,
+				4A44647CD21336C80777252F /* Pods-InstaEmir-InstaEmirUITests.debug.xcconfig */,
+				381179C70E7B5447FB2B3F71 /* Pods-InstaEmir-InstaEmirUITests.release.xcconfig */,
+				5A93800A27021AB77ED1DEFC /* Pods-InstaEmirTests.debug.xcconfig */,
+				C11FB5FD9A917D2A7249361F /* Pods-InstaEmirTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69DF5BB327BFCA47002FDF06 /* InstaEmir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DF5BDE27BFCA49002FDF06 /* Build configuration list for PBXNativeTarget "InstaEmir" */;
+			buildPhases = (
+				BA995E209C39A85F3423AD8C /* [CP] Check Pods Manifest.lock */,
+				69DF5BB027BFCA47002FDF06 /* Sources */,
+				69DF5BB127BFCA47002FDF06 /* Frameworks */,
+				69DF5BB227BFCA47002FDF06 /* Resources */,
+				7FC5D866ADF8F0752AB34F0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaEmir;
+			productName = InstaEmir;
+			productReference = 69DF5BB427BFCA47002FDF06 /* InstaEmir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69DF5BC927BFCA49002FDF06 /* InstaEmirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DF5BE127BFCA49002FDF06 /* Build configuration list for PBXNativeTarget "InstaEmirTests" */;
+			buildPhases = (
+				DA6F43E41EA923588F8F6F96 /* [CP] Check Pods Manifest.lock */,
+				69DF5BC627BFCA49002FDF06 /* Sources */,
+				69DF5BC727BFCA49002FDF06 /* Frameworks */,
+				69DF5BC827BFCA49002FDF06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69DF5BCC27BFCA49002FDF06 /* PBXTargetDependency */,
+			);
+			name = InstaEmirTests;
+			productName = InstaEmirTests;
+			productReference = 69DF5BCA27BFCA49002FDF06 /* InstaEmirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69DF5BD327BFCA49002FDF06 /* InstaEmirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DF5BE427BFCA49002FDF06 /* Build configuration list for PBXNativeTarget "InstaEmirUITests" */;
+			buildPhases = (
+				A7684E38F21800715A6885FB /* [CP] Check Pods Manifest.lock */,
+				69DF5BD027BFCA49002FDF06 /* Sources */,
+				69DF5BD127BFCA49002FDF06 /* Frameworks */,
+				69DF5BD227BFCA49002FDF06 /* Resources */,
+				AAC5F199C6A6AD59EEABC575 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69DF5BD627BFCA49002FDF06 /* PBXTargetDependency */,
+			);
+			name = InstaEmirUITests;
+			productName = InstaEmirUITests;
+			productReference = 69DF5BD427BFCA49002FDF06 /* InstaEmirUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69DF5BAC27BFCA47002FDF06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					69DF5BB327BFCA47002FDF06 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					69DF5BC927BFCA49002FDF06 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 69DF5BB327BFCA47002FDF06;
+					};
+					69DF5BD327BFCA49002FDF06 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 69DF5BB327BFCA47002FDF06;
+					};
+				};
+			};
+			buildConfigurationList = 69DF5BAF27BFCA47002FDF06 /* Build configuration list for PBXProject "InstaEmir" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69DF5BAB27BFCA47002FDF06;
+			productRefGroup = 69DF5BB527BFCA47002FDF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69DF5BB327BFCA47002FDF06 /* InstaEmir */,
+				69DF5BC927BFCA49002FDF06 /* InstaEmirTests */,
+				69DF5BD327BFCA49002FDF06 /* InstaEmirUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69DF5BB227BFCA47002FDF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DF5BC427BFCA49002FDF06 /* LaunchScreen.storyboard in Resources */,
+				69DF5BC127BFCA49002FDF06 /* Assets.xcassets in Resources */,
+				69DF5BBF27BFCA47002FDF06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DF5BC827BFCA49002FDF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DF5BD227BFCA49002FDF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FC5D866ADF8F0752AB34F0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaEmir/Pods-InstaEmir-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaEmir/Pods-InstaEmir-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaEmir/Pods-InstaEmir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7684E38F21800715A6885FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaEmir-InstaEmirUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAC5F199C6A6AD59EEABC575 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaEmir-InstaEmirUITests/Pods-InstaEmir-InstaEmirUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaEmir-InstaEmirUITests/Pods-InstaEmir-InstaEmirUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaEmir-InstaEmirUITests/Pods-InstaEmir-InstaEmirUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA995E209C39A85F3423AD8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaEmir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA6F43E41EA923588F8F6F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaEmirTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69DF5BB027BFCA47002FDF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DF5BF027BFCDC8002FDF06 /* StoriesCollectionViewCell.swift in Sources */,
+				69DF5BBC27BFCA47002FDF06 /* MainController.swift in Sources */,
+				69DF5BEE27BFCD06002FDF06 /* FeedCell.swift in Sources */,
+				69DF5BF527BFD040002FDF06 /* InstaModel.swift in Sources */,
+				69DF5BF227BFCEF7002FDF06 /* StoryCell.swift in Sources */,
+				69DF5BB827BFCA47002FDF06 /* AppDelegate.swift in Sources */,
+				69DF5BBA27BFCA47002FDF06 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DF5BC627BFCA49002FDF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DF5BCF27BFCA49002FDF06 /* InstaEmirTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DF5BD027BFCA49002FDF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DF5BD927BFCA49002FDF06 /* InstaEmirUITests.swift in Sources */,
+				69DF5BDB27BFCA49002FDF06 /* InstaEmirUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69DF5BCC27BFCA49002FDF06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69DF5BB327BFCA47002FDF06 /* InstaEmir */;
+			targetProxy = 69DF5BCB27BFCA49002FDF06 /* PBXContainerItemProxy */;
+		};
+		69DF5BD627BFCA49002FDF06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69DF5BB327BFCA47002FDF06 /* InstaEmir */;
+			targetProxy = 69DF5BD527BFCA49002FDF06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69DF5BBD27BFCA47002FDF06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69DF5BBE27BFCA47002FDF06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69DF5BC227BFCA49002FDF06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69DF5BC327BFCA49002FDF06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69DF5BDC27BFCA49002FDF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69DF5BDD27BFCA49002FDF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69DF5BDF27BFCA49002FDF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6581E29F07B4B49271EBCEEA /* Pods-InstaEmir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstaEmir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lesson.InstaEmir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69DF5BE027BFCA49002FDF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7275C21A949763155B6D7DE1 /* Pods-InstaEmir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstaEmir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lesson.InstaEmir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		69DF5BE227BFCA49002FDF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A93800A27021AB77ED1DEFC /* Pods-InstaEmirTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lesson.InstaEmirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaEmir.app/InstaEmir";
+			};
+			name = Debug;
+		};
+		69DF5BE327BFCA49002FDF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C11FB5FD9A917D2A7249361F /* Pods-InstaEmirTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lesson.InstaEmirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaEmir.app/InstaEmir";
+			};
+			name = Release;
+		};
+		69DF5BE527BFCA49002FDF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A44647CD21336C80777252F /* Pods-InstaEmir-InstaEmirUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lesson.InstaEmirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaEmir;
+			};
+			name = Debug;
+		};
+		69DF5BE627BFCA49002FDF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381179C70E7B5447FB2B3F71 /* Pods-InstaEmir-InstaEmirUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lesson.InstaEmirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaEmir;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69DF5BAF27BFCA47002FDF06 /* Build configuration list for PBXProject "InstaEmir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DF5BDC27BFCA49002FDF06 /* Debug */,
+				69DF5BDD27BFCA49002FDF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69DF5BDE27BFCA49002FDF06 /* Build configuration list for PBXNativeTarget "InstaEmir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DF5BDF27BFCA49002FDF06 /* Debug */,
+				69DF5BE027BFCA49002FDF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69DF5BE127BFCA49002FDF06 /* Build configuration list for PBXNativeTarget "InstaEmirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DF5BE227BFCA49002FDF06 /* Debug */,
+				69DF5BE327BFCA49002FDF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69DF5BE427BFCA49002FDF06 /* Build configuration list for PBXNativeTarget "InstaEmirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DF5BE527BFCA49002FDF06 /* Debug */,
+				69DF5BE627BFCA49002FDF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69DF5BAC27BFCA47002FDF06 /* Project object */;
+}
